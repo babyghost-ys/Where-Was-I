@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA2084F81D579714003BFBA8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2084F71D579714003BFBA8 /* DataModel.swift */; };
+		AA2084FA1D5797D6003BFBA8 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2084F91D5797D6003BFBA8 /* DataStore.swift */; };
 		AA576F111D5766A800B9CD82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA576F101D5766A800B9CD82 /* AppDelegate.swift */; };
 		AA576F131D5766A800B9CD82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA576F121D5766A800B9CD82 /* ViewController.swift */; };
 		AA576F161D5766A800B9CD82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA576F141D5766A800B9CD82 /* Main.storyboard */; };
 		AA576F181D5766A800B9CD82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA576F171D5766A800B9CD82 /* Assets.xcassets */; };
 		AA576F1B1D5766A800B9CD82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA576F191D5766A800B9CD82 /* LaunchScreen.storyboard */; };
+		AA576F241D57679B00B9CD82 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA576F231D57679A00B9CD82 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA2084F71D579714003BFBA8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AA2084F91D5797D6003BFBA8 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AA576F0D1D5766A800B9CD82 /* Where Was I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where Was I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA576F101D5766A800B9CD82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA576F121D5766A800B9CD82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		AA576F171D5766A800B9CD82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA576F1A1D5766A800B9CD82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA576F1C1D5766A800B9CD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA576F231D57679A00B9CD82 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA576F241D57679B00B9CD82 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				AA576F0F1D5766A800B9CD82 /* Where Was I */,
 				AA576F0E1D5766A800B9CD82 /* Products */,
+				AA576F221D57679A00B9CD82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +68,18 @@
 				AA576F171D5766A800B9CD82 /* Assets.xcassets */,
 				AA576F191D5766A800B9CD82 /* LaunchScreen.storyboard */,
 				AA576F1C1D5766A800B9CD82 /* Info.plist */,
+				AA2084F71D579714003BFBA8 /* DataModel.swift */,
+				AA2084F91D5797D6003BFBA8 /* DataStore.swift */,
 			);
 			path = "Where Was I";
+			sourceTree = "<group>";
+		};
+		AA576F221D57679A00B9CD82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA576F231D57679A00B9CD82 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA576F131D5766A800B9CD82 /* ViewController.swift in Sources */,
+				AA2084FA1D5797D6003BFBA8 /* DataStore.swift in Sources */,
 				AA576F111D5766A800B9CD82 /* AppDelegate.swift in Sources */,
+				AA2084F81D579714003BFBA8 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,7 @@
 				AA576F211D5766A800B9CD82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
